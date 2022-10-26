@@ -5,7 +5,7 @@ context('password reset',()=>{
     const serverId = 'zl74egxy';
     const serverDomain = 'zl74egxy.mailosaur.net';
     const emailAddress = 'passwordresettest@'+ serverDomain;
-let passwordResetLink
+    let passwordResetLink
     it('should be possible to request a reset',()=>{
         
 
@@ -21,7 +21,6 @@ let passwordResetLink
   }).then((message) => {
     cy.log('Message subject:', message.subject);
     
-  
         passwordResetLink = message.html.links[0].href  
         
     })

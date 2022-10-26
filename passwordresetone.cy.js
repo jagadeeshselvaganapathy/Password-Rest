@@ -12,9 +12,7 @@ let passwordResetLink
        cy.visit('https://login.bigcommerce.com/recover/new')
        cy.get('#user_email').type('passwordresettest@zl74egxy.mailosaur.net')
        cy.get('.login-form-button').click()
-     //  cy.get('form').submit()
-      /* cy.get('#email').type(emailAddress)
-       cy.get('form').submit()*/
+     
 
 
    
